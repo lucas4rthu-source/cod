@@ -1,0 +1,18 @@
+#atividade_01
+
+#Python/Faça um algoritmo que leia os valores de A, B, C e em seguida imprima na tela a soma entre A e B é mostre se a soma é menor que C.
+a = int(input(f" adicione um numero para A: "))
+b = int(input(f"\nadicione um numero para B: "))
+c = int(input(f"\n adicione um numero para C: "))
+
+d = a + b
+
+print(f"\n os valores digitados foram A({a}) B({b}) C({c})")
+print(f"\n a soma de {a} e {b} e {d}")
+
+if d > c:
+    print(f"\n a soma de A e B ({d}) e maior que C ({c})")
+elif d < c:
+    print(f"\n a soma de A e B ({d}) e menor que C ({c})")
+else: 
+    print(f"\n os valores sao iguais")
