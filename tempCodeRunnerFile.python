@@ -1,18 +1,19 @@
-#atividade_01
+#Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
 
-#Python/Faça um algoritmo que leia os valores de A, B, C e em seguida imprima na tela a soma entre A e B é mostre se a soma é menor que C.
-a = int(input(f" adicione um numero para A: "))
-b = int(input(f"\nadicione um numero para B: "))
-c = int(input(f"\n adicione um numero para C: "))
+a = int(input("digite um numero aleatorio: "))
+print(f"\no numero que voce escolheu foi {a}")
 
-d = a + b
+if a % 2 == 0:
+    print("\no numero e par")
 
-print(f"\n os valores digitados foram A({a}) B({b}) C({c})")
-print(f"\n a soma de {a} e {b} e {d}")
+else:
+    print("\no numero e impar")
 
-if d > c:
-    print(f"\n a soma de A e B ({d}) e maior que C ({c})")
-elif d < c:
-    print(f"\n a soma de A e B ({d}) e menor que C ({c})")
-else: 
-    print(f"\n os valores sao iguais")
+if a > 0:
+    print("\no numero e possitivo")
+
+elif a < 0:
+    print("\no numero e negativo")
+
+else:
+    print("\no numero e zero")
